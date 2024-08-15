@@ -1,0 +1,6 @@
+@OnwelloBackend_HostAddress = http://localhost:5042
+
+GET {{OnwelloBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
