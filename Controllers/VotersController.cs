@@ -13,7 +13,7 @@ namespace OnwelloBackend.Controllers
             return Ok(itemStore.GetAll());
         }
 
-        // GET: api/items/{id}
+        // GET: api/voters/{id}
         [HttpGet("{id}")]
         public ActionResult<Voter> GetById(int id)
         {

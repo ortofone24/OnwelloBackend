@@ -6,14 +6,14 @@ namespace OnwelloBackend.Controllers
 {
     public class CandidateController(InMemoryStore<Candidate> itemStore) : ApiController
     {
-        // GET: api/voters
+        // GET: api/candidate
         [HttpGet]
         public ActionResult<IEnumerable<Candidate>> GetAll()
         {
             return Ok(itemStore.GetAll());
         }
 
-        // GET: api/items/{id}
+        // GET: api/candidate/{id}
         [HttpGet("{id}")]
         public ActionResult<Candidate> GetById(int id)
         {
@@ -25,7 +25,7 @@ namespace OnwelloBackend.Controllers
             return Ok(item);
         }
 
-        // POST: api/voters
+        // POST: api/candidate
         [HttpPost]
         public ActionResult<Candidate> Create(Candidate item)
         {
@@ -33,7 +33,7 @@ namespace OnwelloBackend.Controllers
             return CreatedAtAction(nameof(GetById), new { id = item.Id }, item);
         }
 
-        // PUT: api/voters/{id}
+        // PUT: api/candidate/{id}
         [HttpPut("{id}")]
         public IActionResult Update(int id, Candidate item)
         {
@@ -52,7 +52,7 @@ namespace OnwelloBackend.Controllers
             return NoContent();
         }
 
-        // DELETE: api/voter/{id}
+        // DELETE: api/candidate/{id}
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
