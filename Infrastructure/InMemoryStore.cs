@@ -1,4 +1,4 @@
-﻿namespace OnwelloBackend.Common
+﻿namespace OnwelloBackend.Infrastructure
 {
     public class InMemoryStore<T> where T : class
     {

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OnwelloBackend.Common;
+using OnwelloBackend.Infrastructure;
 using OnwelloBackend.Models;
 
 namespace OnwelloBackend.Controllers

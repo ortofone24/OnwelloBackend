@@ -1,4 +1,4 @@
-using OnwelloBackend.Common;
+using OnwelloBackend.Infrastructure;
 using OnwelloBackend.Models;
 
 var builder = WebApplication.CreateBuilder(args);
